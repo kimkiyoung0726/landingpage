@@ -1,147 +1,23 @@
-const destinations = {
-  fukuoka: {
-    name: "후쿠오카", english: "FUKUOKA", country: "JAPAN · FUKUOKA", coord: "33.5904° N", tagline: "골목마다 맛있는 순간이 기다리는 가까운 휴식", flight: "1시간 20분", season: "10월 — 5월", color: "#f9a482", accent: "#2854f4", base: 72,
-    tastes: ["food", "relax", "shopping"],
-    spots: [
-      ["🍜", "하카타의 첫 끼", "도착하자마자 즐기는 진한 돈코츠 라멘"], ["🌊", "모모치 해변", "바닷바람과 노을을 따라 걷는 저녁"], ["♨️", "유후인 온천", "느린 골목과 따뜻한 료칸에서 하루"], ["🛍️", "텐진 산책", "로컬 숍과 카페를 발견하는 마지막 날"]
-    ]
-  },
-  danang: {
-    name: "다낭", english: "DA NANG", country: "VIETNAM · DA NANG", coord: "16.0544° N", tagline: "햇살과 미식, 리조트의 여유가 한곳에", flight: "4시간 40분", season: "2월 — 8월", color: "#53bcd2", accent: "#ff775f", base: 88,
-    tastes: ["relax", "food", "nature"],
-    spots: [
-      ["🌴", "미케 비치", "파도 소리로 시작하는 가벼운 산책"], ["🥢", "한시장 미식", "반쎄오와 쌀국수로 채우는 로컬 테이블"], ["🏮", "호이안의 밤", "등불이 켜진 골목을 천천히 걷기"], ["⛰️", "바나힐", "구름 위 골든브리지와 시원한 전망"]
-    ]
-  },
-  barcelona: {
-    name: "바르셀로나", english: "BARCELONA", country: "SPAIN · BARCELONA", coord: "41.3874° N", tagline: "건축과 예술, 지중해의 리듬을 걷는 도시", flight: "14시간 10분", season: "4월 — 10월", color: "#ee8a49", accent: "#2854f4", base: 215,
-    tastes: ["culture", "food", "shopping"],
-    spots: [
-      ["⛪", "사그라다 파밀리아", "빛과 곡선으로 만나는 가우디의 세계"], ["🎨", "고딕 지구", "오래된 골목과 작은 갤러리 탐험"], ["🥘", "보케리아 시장", "타파스와 해산물로 즐기는 현지의 맛"], ["🌅", "바르셀로네타", "지중해의 저녁빛을 따라 걷는 해변"]
-    ]
-  },
-  chiangmai: {
-    name: "치앙마이", english: "CHIANG MAI", country: "THAILAND · CHIANG MAI", coord: "18.7883° N", tagline: "초록빛 자연과 느린 하루가 있는 북쪽 도시", flight: "5시간 50분", season: "11월 — 2월", color: "#77a56a", accent: "#d8ff3e", base: 98,
-    tastes: ["nature", "relax", "culture"],
-    spots: [
-      ["🛕", "올드타운 사원", "아침 햇살 아래 고요한 사원 산책"], ["☕", "님만해민 카페", "로컬 로스터리와 디자인 숍 탐험"], ["🌿", "도이인타논", "폭포와 구름숲을 만나는 트레킹"], ["🏮", "선데이 마켓", "수공예품과 길거리 음식으로 채운 밤"]
-    ]
-  }
+const cities={
+  prague:{name:"PRAGUE",kr:"프라하",country:"CZECHIA · CENTRAL EUROPE",score:94,season:"APR — OCT",cost:168,pos:"left top",note:"붉은 지붕과 고딕 첨탑, 강 위로 번지는 저녁빛. 오래된 골목을 걷고 싶은 당신에게 꼭 맞는 도시예요.",tags:["#예술과건축","#오래된골목","#강변산책"],days:[["도착, 첫 번째 골목","구시가지 광장과 천문시계 사이를 천천히 걷는 날"],["다리 위의 아침","사람이 적은 새벽 카를교와 강변 카페"],["성 안의 오후","프라하성, 황금소로, 오래된 정원의 빛"],["현지인의 식탁","홀레쇼비체 마켓과 작은 비스트로 탐방"],["음악이 흐르는 밤","재즈 클럽과 블타바강 야경 크루즈"],["마지막 엽서","좋았던 골목을 다시 걷고 작은 기념품 고르기"]]},
+  budapest:{name:"BUDAPEST",kr:"부다페스트",country:"HUNGARY · DANUBE RIVER",score:91,season:"MAR — NOV",cost:158,pos:"center top",note:"도나우강을 사이에 둔 두 도시와 오래된 온천. 낮과 밤의 표정이 완전히 다른 로맨틱한 여행지예요.",tags:["#도시의밤","#온천휴식","#강변풍경"],days:[["부다와 페스트","세체니 다리를 건너 두 도시의 첫인상 만나기"],["왕궁의 언덕","어부의 요새와 오래된 트램이 있는 오후"],["온천의 시간","세체니 온천에서 여행의 속도를 낮추기"],["중앙시장 미식","굴라시와 파프리카, 로컬 디저트 탐방"],["도나우의 밤","국회의사당이 빛나는 강변 야경 산책"],["카페의 도시","뉴욕 카페와 작은 서점에서 보내는 마지막 날"]]},
+  vienna:{name:"VIENNA",kr:"빈",country:"AUSTRIA · IMPERIAL CITY",score:88,season:"APR — DEC",cost:196,pos:"right top",note:"클래식 음악과 미술관, 우아한 카페 문화가 하루를 채우는 도시. 예술을 오래 바라보는 여행에 어울려요.",tags:["#클래식예술","#카페문화","#정원산책"],days:[["링슈트라세","트램을 타고 만나는 빈의 고전 건축"],["클림트의 황금빛","벨베데레 궁전과 미술관에서 보내는 오후"],["카페의 시간","멜랑주와 자허토르테를 즐기는 느린 하루"],["쇤브룬 정원","궁전과 언덕을 잇는 긴 산책"],["음악이 있는 밤","작은 콘서트홀에서 만나는 클래식 공연"],["나슈마르크트","시장과 디자인 숍을 둘러보는 마지막 장면"]]},
+  porto:{name:"PORTO",kr:"포르투",country:"PORTUGAL · DOURO RIVER",score:85,season:"MAY — OCT",cost:214,pos:"left bottom",note:"푸른 타일과 노을빛 강변, 언덕을 오르는 노란 트램. 바다와 오래된 도시를 함께 원하는 여행자에게 좋아요.",tags:["#푸른타일","#강변노을","#골목사진"],days:[["히베이라의 첫빛","도루강과 알록달록한 집들이 맞이하는 오후"],["아줄레주 산책","상벤투역과 오래된 교회의 푸른 타일"],["와인의 강","가이아 지구 와이너리와 석양 크루즈"],["시장과 식탁","볼량시장과 프란세지냐 맛보기"],["대서양 끝에서","포스 해변을 따라 걷는 긴 산책"],["트램과 서점","렐루서점과 빈티지 트램으로 마무리"]]}
 };
-
-const tasteNames = { food: "미식", relax: "휴식", culture: "문화", nature: "자연", shopping: "쇼핑" };
-const budget = document.querySelector("#budget");
-const budgetDisplay = document.querySelector("#budgetDisplay");
-const durationButtons = [...document.querySelectorAll("[data-days]")];
-const tasteButtons = [...document.querySelectorAll("[data-taste]")];
-const itinerary = document.querySelector("#itinerary");
-let days = 4;
-let shuffleOffset = 0;
-
-function selectedTastes() {
-  return tasteButtons.filter((button) => button.classList.contains("active")).map((button) => button.dataset.taste);
-}
-
-function scoreDestination(destination, key) {
-  const amount = Number(budget.value);
-  const target = destination.base + Math.max(0, days - 3) * (destination.base * 0.16);
-  const budgetScore = Math.max(0, 42 - Math.abs(amount - target) * 0.22);
-  const tasteScore = selectedTastes().reduce((score, taste) => score + (destination.tastes.includes(taste) ? 27 : 2), 0);
-  const shuffleScore = ((Object.keys(destinations).indexOf(key) + shuffleOffset) % 4) * 2;
-  return budgetScore + tasteScore + shuffleScore;
-}
-
-function getRecommendation() {
-  return Object.entries(destinations).sort((a, b) => scoreDestination(b[1], b[0]) - scoreDestination(a[1], a[0]))[0][1];
-}
-
-function createItinerary(destination) {
-  itinerary.innerHTML = "";
-  const visibleDays = Math.min(days, 4);
-  for (let i = 0; i < visibleDays; i += 1) {
-    const spot = destination.spots[i % destination.spots.length];
-    const card = document.createElement("article");
-    card.className = "day-card";
-    card.innerHTML = `<span class="day">DAY ${i + 1}</span><i>${spot[0]}</i><strong>${spot[1]}</strong><p>${spot[2]}</p>`;
-    itinerary.appendChild(card);
-  }
-}
-
-function updatePlanner() {
-  const amount = Number(budget.value);
-  const destination = getRecommendation();
-  const tastes = selectedTastes();
-  const match = Math.min(98, Math.max(78, Math.round(82 + scoreDestination(destination, destination.english.toLowerCase().replace(" ", "")) / 10)));
-  const cost = Math.round(destination.base + Math.max(0, days - 3) * destination.base * 0.16);
-  const durationName = days >= 8 ? "7박 이상" : `${days - 1}박 ${days}일`;
-  const tasteLabel = tastes.length ? tastes.map((taste) => tasteNames[taste]).join("과 ") : "새로운 발견";
-
-  budgetDisplay.textContent = amount;
-  budget.style.setProperty("--range-progress", `${((amount - 50) / 350) * 100}%`);
-  document.querySelector("#destinationName").textContent = destination.name;
-  document.querySelector("#destinationTagline").textContent = destination.tagline;
-  document.querySelector("#countryLabel").textContent = destination.country;
-  document.querySelector("#tripSummary").textContent = `${durationName} · ${tasteLabel}`;
-  document.querySelector("#estimatedCost").textContent = `약 ${cost}만원`;
-  document.querySelector("#flightTime").textContent = destination.flight;
-  document.querySelector("#bestSeason").textContent = destination.season;
-  document.querySelector("#dayCount").textContent = `DAY 1 — ${days}`;
-  document.querySelector("#matchLabel").textContent = `${match}% MATCH`;
-  document.querySelector("#matchRing strong").textContent = match;
-  document.querySelector("#matchRing").style.background = `conic-gradient(var(--blue) ${match}%, #d8d5ca 0)`;
-  document.querySelector("#destinationStage").style.background = destination.color;
-  document.querySelector("#heroCity").textContent = destination.english;
-  document.querySelector("#heroCoord").textContent = destination.coord;
-  createItinerary(destination);
-}
-
-budget.addEventListener("input", updatePlanner);
-durationButtons.forEach((button) => button.addEventListener("click", () => {
-  durationButtons.forEach((item) => item.classList.remove("active"));
-  button.classList.add("active");
-  days = Number(button.dataset.days);
-  updatePlanner();
-}));
-
-tasteButtons.forEach((button) => button.addEventListener("click", () => {
-  if (!button.classList.contains("active") && selectedTastes().length >= 2) {
-    tasteButtons.find((item) => item.classList.contains("active"))?.classList.remove("active");
-  }
-  button.classList.toggle("active");
-  if (selectedTastes().length === 0) button.classList.add("active");
-  updatePlanner();
-}));
-
-document.querySelector("#shuffleButton").addEventListener("click", () => {
-  shuffleOffset += 3;
-  const active = tasteButtons.filter((button) => button.classList.contains("active"));
-  active.forEach((button) => button.classList.remove("active"));
-  const start = shuffleOffset % tasteButtons.length;
-  tasteButtons[start].classList.add("active");
-  tasteButtons[(start + 2) % tasteButtons.length].classList.add("active");
-  updatePlanner();
-});
-
-document.querySelectorAll("[data-scroll-to]").forEach((button) => button.addEventListener("click", () => {
-  document.querySelector(`#${button.dataset.scrollTo}`).scrollIntoView({ behavior: "smooth" });
-}));
-
-const saveButton = document.querySelector("#saveButton");
-saveButton.addEventListener("click", () => {
-  saveButton.classList.toggle("saved");
-  saveButton.textContent = saveButton.classList.contains("saved") ? "♥" : "♡";
-  showToast(saveButton.classList.contains("saved") ? "여행 후보에 저장했어요." : "저장을 취소했어요.");
-});
-
-document.querySelector("#planButton").addEventListener("click", () => showToast("맞춤 여행 초안이 완성됐어요!"));
-
-let toastTimer;
-function showToast(message) {
-  const toast = document.querySelector("#toast");
-  toast.textContent = message;
-  toast.classList.add("show");
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => toast.classList.remove("show"), 2200);
-}
-
-updatePlanner();
+const keywordButtons=[...document.querySelectorAll(".keyword")],durationButtons=[...document.querySelectorAll("[data-days]")],cityTabs=[...document.querySelectorAll(".city-tab")];
+const budget=document.querySelector("#budget"),budgetOutput=document.querySelector("#budgetOutput"),durationOutput=document.querySelector("#durationOutput");let selectedDays=6,currentCity="prague";
+function selectedKeywords(){return keywordButtons.filter(b=>b.classList.contains("active")).map(b=>b.querySelector("strong").textContent)}
+function updateBudget(){const value=Number(budget.value);budgetOutput.value=`${value}만원`;budget.style.setProperty("--progress",`${((value-80)/420)*100}%`);document.querySelector("#factBudget").textContent=`약 ${Math.min(value,cities[currentCity].cost+Math.max(0,selectedDays-6)*18)}만원`}
+keywordButtons.forEach(button=>button.addEventListener("click",()=>{const active=selectedKeywords().length;if(!button.classList.contains("active")&&active>=3){showToast("키워드는 세 개까지 선택할 수 있어요.");return}button.classList.toggle("active");if(selectedKeywords().length===0)button.classList.add("active")}));
+budget.addEventListener("input",updateBudget);
+durationButtons.forEach(button=>button.addEventListener("click",()=>{durationButtons.forEach(b=>b.classList.remove("active"));button.classList.add("active");selectedDays=Number(button.dataset.days);const label=selectedDays>=11?"10일 이상":`${selectedDays-1}박 ${selectedDays}일`;durationOutput.value=label;document.querySelector("#factDays").textContent=label;renderDays();updateBudget()}));
+function setCity(key){currentCity=key;const city=cities[key],card=document.querySelector("#destinationCard");card.classList.add("changing");setTimeout(()=>{document.querySelector("#destinationName").textContent=city.name;document.querySelector("#destinationKr").textContent=city.kr;document.querySelector("#destinationCountry").textContent=city.country;document.querySelector("#destinationNote").textContent=city.note;document.querySelector("#factSeason").textContent=city.season;document.querySelector("#matchScore").textContent=city.score;document.querySelector("#storyCity").textContent=city.kr;document.querySelector("#destinationArt").style.backgroundPosition=city.pos;document.querySelector("#tagRow").innerHTML=city.tags.map(tag=>`<span>${tag}</span>`).join("");cityTabs.forEach(tab=>tab.classList.toggle("active",tab.dataset.city===key));renderDays();updateBudget();card.classList.remove("changing")},220)}
+cityTabs.forEach(tab=>tab.addEventListener("click",()=>setCity(tab.dataset.city)));
+function renderDays(){const city=cities[currentCity],count=Math.min(selectedDays,city.days.length),rail=document.querySelector("#dayRail"),panels=document.querySelector("#dayPanels");rail.innerHTML="";panels.innerHTML="";for(let i=0;i<count;i++){const railButton=document.createElement("button");railButton.textContent=`DAY ${String(i+1).padStart(2,"0")}`;if(i===0)railButton.classList.add("active");railButton.addEventListener("click",()=>{document.querySelectorAll(".day-rail button").forEach(b=>b.classList.remove("active"));railButton.classList.add("active");panels.children[i].scrollIntoView({behavior:"smooth",block:"center"})});rail.appendChild(railButton);const panel=document.createElement("article");panel.className="day-panel";panel.innerHTML=`<div class="day-thumb" style="--pos:${["left top","center top","right top","left bottom","center bottom","right bottom"][i]}"></div><div class="day-copy"><small>DAY ${String(i+1).padStart(2,"0")} · CURATED ROUTE</small><h3>${city.days[i][0]}</h3><p>${city.days[i][1]}</p></div><span class="day-toggle">+</span><div class="day-detail">오전과 오후 동선 사이에 충분한 여백을 두었어요. 장소를 저장하면 식당과 교통 정보까지 이어서 확인할 수 있습니다.</div>`;panel.addEventListener("click",()=>panel.classList.toggle("expanded"));panels.appendChild(panel)}}
+document.querySelector("#generateButton").addEventListener("click",event=>{const button=event.currentTarget;button.classList.add("loading");button.querySelector("strong").textContent="취향을 읽는 중...";const keys=keywordButtons.filter(b=>b.classList.contains("active")).map(b=>b.dataset.key);let city="prague";if(keys.includes("night"))city="budapest";else if(keys.includes("food")&&Number(budget.value)>210)city="porto";else if(keys.includes("art")&&!keys.includes("water"))city="vienna";setTimeout(()=>{setCity(city);button.classList.remove("loading");button.querySelector("strong").textContent="나의 여행 그리기";document.querySelector("#routes").scrollIntoView({behavior:"smooth"});showToast("당신의 취향에 맞는 도시를 찾았어요.")},900)});
+document.querySelectorAll("[data-scroll]").forEach(button=>button.addEventListener("click",()=>document.querySelector(`#${button.dataset.scroll}`).scrollIntoView({behavior:"smooth"})));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add("visible")}),{threshold:.13});document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+window.addEventListener("scroll",()=>document.querySelector("#topbar").classList.toggle("sticky",scrollY>90));
+const hero=document.querySelector(".hero"),watercolor=document.querySelector(".watercolor-layer");hero.addEventListener("pointermove",event=>{if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;const x=(event.clientX/innerWidth-.5)*10,y=(event.clientY/innerHeight-.5)*7;watercolor.style.transform=`scale(1.04) translate(${x}px,${y}px)`});hero.addEventListener("pointerleave",()=>watercolor.style.transform="scale(1.04)");
+let toastTimer;function showToast(message){const toast=document.querySelector("#toast");toast.textContent=message;toast.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove("show"),2200)}
+renderDays();updateBudget();
