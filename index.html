@@ -1,198 +1,394 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="WANDER가 큐레이션한 오키나와의 바다, 숙소, 로컬 미식과 섬의 시간을 만나보세요." />
-    <meta name="theme-color" content="#087ed4" />
-    <meta property="og:title" content="WANDER OKINAWA — 섬의 속도로 여행하다" />
-    <meta property="og:description" content="푸른 바다부터 나하의 밤까지, 오키나와를 깊이 만나는 프리미엄 여정." />
-    <meta property="og:image" content="/wander-og.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <title>WANDER OKINAWA — 섬의 속도로 여행하다</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@300;400&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <a class="skip" href="#main">본문 바로가기</a>
-    <header class="site-nav" id="siteNav">
-      <a class="wordmark" href="#home">WANDER<span>°</span></a>
-      <nav aria-label="주요 메뉴"><a href="#story">섬의 이야기</a><a href="#stay">머무는 곳</a><a href="#packages">여행 상품</a><a href="#taste">로컬 미식</a><a href="#plan">여정 만들기</a></nav>
-      <button class="nav-cta" data-open-planner>MY JOURNEY <span>↗</span></button>
-      <button class="menu-button" aria-label="메뉴 열기" aria-expanded="false"><i></i><i></i></button>
-    </header>
 
-    <main id="main">
-      <section class="project-intro" id="home" aria-labelledby="projectTitle">
-        <div class="project-intro-grid">
-          <div class="project-intro-copy">
-            <h2 class="project-eyebrow">TRAVEL landing PROJECT</h2>
-            <h3 id="projectTitle">여행이 시작되기 전,<br /><span>섬의 속도를 만나다.</span></h3>
-            <p class="project-summary">오키나와의 바다와 로컬 문화, 오래 머물고 싶은 숙소를 하나의 흐름으로 엮은 프리미엄 여행 프로젝트입니다. 목적지를 소비하는 대신 그곳의 리듬에 천천히 스며드는 여정을 제안합니다.</p>
-            <dl class="project-meta">
-              <div><dt>DESTINATION</dt><dd>Okinawa, Japan</dd></div>
-              <div><dt>JOURNEY</dt><dd>4–6 Days</dd></div>
-              <div><dt>FOCUS</dt><dd>Stay · Taste · Local</dd></div>
-            </dl>
-            <dl class="project-meta">
-                <div><dt>기간</dt><dd>2026.09 1Day</dd></div>
-                <div><dt> 역활</dt><dd>vibe coding Codex </dd></div>
-            </dl>
-            <a class="project-link" href="#okinawa">프로젝트 둘러보기 <i>↓</i></a>
-          </div>
-          
-          <div class="project-intro-visual">
-            <div class="project-intro-image" role="img" aria-label="오키나와의 맑은 바다와 해안선">
-              <p>OKINAWA <span>26°12' N · 127°40' E</span></p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WANDER가 큐레이션한 오키나와의 바다, 숙소, 로컬 미식과 섬의 시간을 만나보세요." />
+  <meta name="theme-color" content="#087ed4" />
+  <meta property="og:title" content="WANDER OKINAWA — 섬의 속도로 여행하다" />
+  <meta property="og:description" content="푸른 바다부터 나하의 밤까지, 오키나와를 깊이 만나는 프리미엄 여정." />
+  <meta property="og:image" content="/wander-og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>WANDER OKINAWA — 섬의 속도로 여행하다</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@300;400&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">본문 바로가기</a>
+  <header class="site-nav" id="siteNav">
+    <a class="wordmark" href="#home">WANDER<span>°</span></a>
+    <nav aria-label="주요 메뉴"><a href="#story">섬의 이야기</a><a href="#stay">머무는 곳</a><a href="#packages">여행 상품</a><a
+        href="#taste">로컬 미식</a><a href="#plan">여정 만들기</a></nav>
+    <button class="nav-cta" data-open-planner>MY JOURNEY <span>↗</span></button>
+    <button class="menu-button" aria-label="메뉴 열기" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <main id="main">
+    <section class="project-intro" id="home" aria-labelledby="projectTitle">
+      <div class="project-intro-grid">
+        <div class="project-intro-copy">
+          <h2 class="project-eyebrow">TRAVEL landing PROJECT</h2>
+          <h3 id="projectTitle">여행이 시작되기 전,<br /><span>섬의 속도를 만나다.</span></h3>
+          <p class="project-summary">오키나와의 바다와 로컬 문화, 오래 머물고 싶은 숙소를 하나의 흐름으로 엮은 프리미엄 여행 랜딩페이지 디자인 프로젝트입니다. 목적지를 소비하는 대신 그곳의 리듬에
+            천천히 스며드는 여정을 제안합니다.</p>
+          <dl class="project-meta">
+            <div>
+              <dt>DESTINATION</dt>
+              <dd>Okinawa, Japan</dd>
             </div>
-            <p class="project-vertical">YOUR PACE · YOUR ISLAND · YOUR STORY</p>
-          </div>
-        </div>
-        <p class="project-index">01 <span>/</span> 09</p>
-      </section>
-
-      <section class="astra-hero" id="okinawa" aria-labelledby="heroTitle">
-        <div class="astra-sticky">
-          <div class="astra-sky" aria-hidden="true"></div>
-          <div class="astra-cover" id="astraCover">
-            <video class="cover-video" autoplay muted loop playsinline preload="metadata" poster="https://images.unsplash.com/photo-1725263559488-2c1cc74f9bb2?auto=format&fit=crop&w=2200&q=88" aria-label="햇빛이 비치는 오키나와 자마미섬과 게라마 제도의 드론 영상">
-              <source src="https://upload.wikimedia.org/wikipedia/commons/1/17/Japan%2C_Okinawa%2C_Kerama_islands_-_view_from_Zamami_island_2018.webm" type="video/webm" />
-            </video>
-            <div class="cover-image" role="img" aria-label="오키나와의 푸른 바다와 해안 풍경"></div>
-            <div class="cover-wash"></div>
-            <div class="cover-lines" aria-hidden="true"><span></span><span></span><span></span></div>
-            <p class="cover-coordinate">26°12' N<br />127°40' E</p>
-            <div class="cover-title">
-              <p>WANDER ISLAND EDIT · 01</p>
-              <h3 id="heroTitle">OKINAWA</h3>
-              <strong>島 の 時 間</strong>
-              <span>바다와 도시, 오래된 류큐의 시간을 걷다</span>
+            <div>
+              <dt>JOURNEY</dt>
+              <dd>4–6 Days</dd>
             </div>
-            <div class="cover-stamp">CURATED<br />IN 2026</div>
-            <a class="hero-credit" href="https://commons.wikimedia.org/wiki/File:Japan,_Okinawa,_Kerama_islands_-_view_from_Zamami_island_2018.webm" target="_blank" rel="noreferrer">FILM · COOL2IKOU / CC BY 3.0</a>
+            <div>
+              <dt>FOCUS</dt>
+              <dd>Stay · Taste · Local</dd>
+            </div>
+          </dl>
+          <dl class="project-meta">
+            <div>
+              <dt>기간</dt>
+              <dd>2026.09 1Day</dd>
+            </div>
+            <div>
+              <dt> 역활</dt>
+              <dd>vibe coding Codex </dd>
+            </div>
+          </dl>
+          <a class="project-link" href="#okinawa">프로젝트 둘러보기 <i>↓</i></a>
+        </div>
+
+        <div class="project-intro-visual">
+          <div class="project-intro-image" role="img" aria-label="오키나와의 맑은 바다와 해안선">
+            <p>OKINAWA <span>26°12' N · 127°40' E</span></p>
           </div>
-          <div class="hero-sidecopy"><span>THE BLUE ISSUE</span><b>01</b></div>
-          <div class="scroll-guide"><span></span><p>SCROLL TO DIVE</p><b id="heroProgress">00</b></div>
+          <p class="project-vertical">YOUR PACE · YOUR ISLAND · YOUR STORY</p>
         </div>
-      </section>
+      </div>
+      <p class="project-index">01 <span>/</span> 09</p>
+    </section>
 
-      <section class="manifesto section" id="story">
-        <div class="manifesto-top reveal"><p class="kicker">NATURAL MODERNISM · 沖縄</p><p>바람이 길을 정하고<br />파도가 하루의 속도를 만드는 곳</p></div>
-        <div class="manifesto-grid">
-          <div class="vertical-title reveal"><small>ISLAND PHILOSOPHY</small><h3>島<br />時<br />間</h3></div>
-          <div class="manifesto-photo circle-photo reveal" role="img" aria-label="투명한 오키나와 바다"></div>
-          <div class="manifesto-copy reveal"><span>01 / THE RHYTHM</span><h3>서두르지 않을 때<br />비로소 보이는 섬</h3><p>오키나와에서는 목적지보다 그 사이의 시간이 더 오래 남습니다. 해안도로의 빛, 작은 찻집의 산핀차, 저녁 골목에서 들려오는 산신 소리까지. WANDER는 관광지가 아닌 섬의 리듬을 따라갑니다.</p><button class="line-button" data-open-planner>나의 섬 여행 찾기 <i>→</i></button></div>
+    <section class="astra-hero" id="okinawa" aria-labelledby="heroTitle">
+      <div class="astra-sticky">
+        <div class="astra-sky" aria-hidden="true"></div>
+        <div class="astra-cover" id="astraCover">
+          <video class="cover-video" autoplay muted loop playsinline preload="metadata"
+            poster="https://images.unsplash.com/photo-1725263559488-2c1cc74f9bb2?auto=format&fit=crop&w=2200&q=88"
+            aria-label="햇빛이 비치는 오키나와 자마미섬과 게라마 제도의 드론 영상">
+            <source
+              src="https://upload.wikimedia.org/wikipedia/commons/1/17/Japan%2C_Okinawa%2C_Kerama_islands_-_view_from_Zamami_island_2018.webm"
+              type="video/webm" />
+          </video>
+          <div class="cover-image" role="img" aria-label="오키나와의 푸른 바다와 해안 풍경"></div>
+          <div class="cover-wash"></div>
+          <div class="cover-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p class="cover-coordinate">26°12' N<br />127°40' E</p>
+          <div class="cover-title">
+            <p>WANDER ISLAND EDIT · 01</p>
+            <h3 id="heroTitle">OKINAWA</h3>
+            <strong>島 の 時 間</strong>
+            <span>바다와 도시, 오래된 류큐의 시간을 걷다</span>
+          </div>
+          <div class="cover-stamp">CURATED<br />IN 2026</div>
+          <a class="hero-credit"
+            href="https://commons.wikimedia.org/wiki/File:Japan,_Okinawa,_Kerama_islands_-_view_from_Zamami_island_2018.webm"
+            target="_blank" rel="noreferrer">FILM · COOL2IKOU / CC BY 3.0</a>
         </div>
-      </section>
-
-      <section class="sense section" aria-labelledby="senseTitle">
-        <div class="section-heading reveal"><p class="kicker">THREE WAYS TO FEEL</p><h3 id="senseTitle">감각으로 기억하는<br />세 개의 오키나와</h3></div>
-        <div class="sense-grid">
-          <article class="sense-card reveal"><div class="sense-image sea"></div><span>海</span><small>01 · SEA</small><h3>빛이 닿는 바다</h3><p>사람이 적은 아침, 요미탄의 산호빛 해변을 천천히 걷습니다.</p></article>
-          <article class="sense-card offset reveal"><div class="sense-image table"></div><span>味</span><small>02 · TASTE</small><h3>섬에서 난 한 끼</h3><p>흑당과 시마도후, 제철 채소가 차려진 작은 식탁을 만납니다.</p></article>
-          <article class="sense-card reveal"><div class="sense-image night"></div><span>夜</span><small>03 · NIGHT</small><h3>나하의 느린 밤</h3><p>붉은 등불 아래 아와모리를 나누며 도시의 진짜 표정을 봅니다.</p></article>
+        <div class="hero-sidecopy"><span>THE BLUE ISSUE</span><b>01</b></div>
+        <div class="scroll-guide"><span></span>
+          <p>SCROLL TO DIVE</p><b id="heroProgress">00</b>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="blue-break" aria-label="오키나와 바다 풍경">
-        <div class="blue-break-image"></div><div class="blue-word" aria-hidden="true">BLUE</div>
-        <p>THE COLOR BETWEEN<br />SKY AND MEMORY</p>
-      </section>
+    <section class="manifesto section" id="story">
+      <div class="manifesto-top reveal">
+        <p class="kicker">NATURAL MODERNISM · 沖縄</p>
+        <p>바람이 길을 정하고<br />파도가 하루의 속도를 만드는 곳</p>
+      </div>
+      <div class="manifesto-grid">
+        <div class="vertical-title reveal"><small>ISLAND PHILOSOPHY</small>
+          <h3>島<br />時<br />間</h3>
+        </div>
+        <div class="manifesto-photo circle-photo reveal" role="img" aria-label="투명한 오키나와 바다"></div>
+        <div class="manifesto-copy reveal"><span>01 / THE RHYTHM</span>
+          <h3>서두르지 않을 때<br />비로소 보이는 섬</h3>
+          <p>오키나와에서는 목적지보다 그 사이의 시간이 더 오래 남습니다. 해안도로의 빛, 작은 찻집의 산핀차, 저녁 골목에서 들려오는 산신 소리까지. WANDER는 관광지가 아닌 섬의 리듬을 따라갑니다.
+          </p><button class="line-button" data-open-planner>나의 섬 여행 찾기 <i>→</i></button>
+        </div>
+      </div>
+    </section>
 
-      <section class="stay section" id="stay">
-        <div class="stay-intro reveal"><div><p class="kicker">HOTEL RECOMMENDATION</p><h3>머무는 순간까지<br />여행이 되는 곳</h3></div><p>건축과 자연, 서비스의 결이 오키나와의 풍경과 자연스럽게 이어지는 세 곳을 골랐습니다. 체크인부터 아침의 빛까지 여행의 장면이 됩니다.</p></div>
-        <article class="featured-stay reveal">
-          <div class="featured-image" role="img" aria-label="바다를 바라보는 오키나와 리조트 수영장"><span>01</span></div>
-          <div class="featured-copy"><small>ONNA · OKINAWA</small><h3>The Terrace Club<br />at Busena</h3><p>동중국해를 향해 열린 수평선과 웰니스 프로그램. 아무것도 하지 않는 시간을 가장 우아하게 보내는 어른의 리조트입니다.</p><dl><div><dt>ROOM</dt><dd>Ocean View</dd></div><div><dt>MOOD</dt><dd>Quiet Luxury</dd></div><div><dt>STAY</dt><dd>2–3 Nights</dd></div></dl><button class="line-button" data-open-planner>이 숙소로 여행 만들기 <i>→</i></button></div>
+    <section class="sense section" aria-labelledby="senseTitle">
+      <div class="section-heading reveal">
+        <p class="kicker">THREE WAYS TO FEEL</p>
+        <h3 id="senseTitle">감각으로 기억하는<br />세 개의 오키나와</h3>
+      </div>
+      <div class="sense-grid">
+        <article class="sense-card reveal">
+          <div class="sense-image sea"></div><span>海</span><small>01 · SEA</small>
+          <h3>빛이 닿는 바다</h3>
+          <p>사람이 적은 아침, 요미탄의 산호빛 해변을 천천히 걷습니다.</p>
         </article>
-        <div class="stay-pair">
-          <article class="mini-stay reveal"><div class="mini-image halekulani"></div><span>02 · ONNA</span><h3>Halekulani Okinawa</h3><p>하얀 건축과 에메랄드빛 바다가 만나는 클래식 리조트.</p></article>
-          <article class="mini-stay down reveal"><div class="mini-image hyakuna"></div><span>03 · NANJO</span><h3>Hyakuna Garan</h3><p>바위와 숲 사이에 숨은 류큐 건축, 고요한 남쪽의 하루.</p></article>
-        </div>
-      </section>
+        <article class="sense-card offset reveal">
+          <div class="sense-image table"></div><span>味</span><small>02 · TASTE</small>
+          <h3>섬에서 난 한 끼</h3>
+          <p>흑당과 시마도후, 제철 채소가 차려진 작은 식탁을 만납니다.</p>
+        </article>
+        <article class="sense-card reveal">
+          <div class="sense-image night"></div><span>夜</span><small>03 · NIGHT</small>
+          <h3>나하의 느린 밤</h3>
+          <p>붉은 등불 아래 아와모리를 나누며 도시의 진짜 표정을 봅니다.</p>
+        </article>
+      </div>
+    </section>
 
-      <section class="taste-section section" id="taste">
-        <div class="taste-heading reveal"><p class="kicker">LOCAL TABLE · 食卓</p><h3>섬의 맛을 따라<br />하루를 걷다</h3><p>바다에서 시장으로, 시장에서 작은 식탁으로. 오키나와의 기후와 역사가 한 접시에 담깁니다.</p></div>
-        <div class="taste-board">
-          <article class="taste-lead reveal"><div class="taste-lead-image"></div><div><span>01 / MAKISHI</span><h3>마키시 공설시장</h3><p>오늘 잡힌 생선과 열대 과일, 상인들의 목소리가 뒤섞이는 나하의 부엌.</p></div></article>
-          <article class="round-bite reveal"><div class="bite-image awamori"></div><div><span>02</span><h3>아와모리 바</h3><p>오래 숙성된 한 잔과 섬의 밤.</p></div></article>
-          <article class="round-bite reveal"><div class="bite-image soba"></div><div><span>03</span><h3>오키나와 소바</h3><p>가쓰오 향이 깊은 느린 점심.</p></div></article>
-          <article class="round-bite reveal"><div class="bite-image sweets"></div><div><span>04</span><h3>류큐 디저트</h3><p>흑당과 소금이 만든 단정한 단맛.</p></div></article>
-        </div>
-      </section>
+    <section class="blue-break" aria-label="오키나와 바다 풍경">
+      <div class="blue-break-image"></div>
+      <div class="blue-word" aria-hidden="true">BLUE</div>
+      <p>THE COLOR BETWEEN<br />SKY AND MEMORY</p>
+    </section>
 
-      <section class="plan section" id="plan">
-        <div class="plan-head reveal"><p class="kicker">YOUR ISLAND ROUTE</p><h3>당신의 속도로 완성하는<br />4일의 섬 여행</h3></div>
-        <div class="route-layout reveal">
-          <div class="route-tabs" role="tablist" aria-label="오키나와 일정 선택">
-            <button class="active" role="tab" aria-selected="true" data-route="0"><span>DAY 01</span><b>나하의 첫인상</b></button>
-            <button role="tab" aria-selected="false" data-route="1"><span>DAY 02</span><b>서쪽 해안의 빛</b></button>
-            <button role="tab" aria-selected="false" data-route="2"><span>DAY 03</span><b>숲과 류큐의 시간</b></button>
-            <button role="tab" aria-selected="false" data-route="3"><span>DAY 04</span><b>남쪽의 고요</b></button>
-          </div>
-          <div class="route-visual" id="routeVisual"><span id="routeNumber">01</span><div><small id="routeArea">NAHA · 17:40</small><h3 id="routeTitle">시장과 골목 사이,<br />여행의 첫 저녁</h3><p id="routeDesc">마키시 시장에서 제철 식재료를 맛보고, 츠보야 도자기 거리와 작은 아와모리 바를 걷습니다.</p></div></div>
+    <section class="stay section" id="stay">
+      <div class="stay-intro reveal">
+        <div>
+          <p class="kicker">HOTEL RECOMMENDATION</p>
+          <h3>머무는 순간까지<br />여행이 되는 곳</h3>
         </div>
-      </section>
-
-      <section class="packages section" id="packages">
-        <div class="packages-head reveal">
-          <div><p class="kicker">엄선 여행 상품</p><h3>취향에 맞게 고르는<br />오키나와 여행 상품</h3></div>
-          <p>항공을 제외한 현지 숙박, 전용 이동, 엄선한 경험과 컨시어지 서비스가 포함된 프라이빗 여정입니다.</p>
-        </div>
-        <div class="package-filter reveal" role="group" aria-label="여행 상품 필터">
-          <button class="active" data-package-filter="all">전체</button><button data-package-filter="rest">휴식</button><button data-package-filter="culture">로컬 문화</button><button data-package-filter="family">가족</button>
-        </div>
-        <div class="package-grid">
-          <article class="package-card reveal" data-package-category="rest">
-            <div class="package-image package-blue"><span>인기</span><small>3박 4일</small></div>
-            <div class="package-body"><div class="package-title"><div><small>프라이빗 휴식</small><h3>푸른 쉼표</h3></div><p><b>1,490,000</b>원부터 / 1인</p></div><p>부세나의 바다와 웰니스에 집중하는 어른의 휴식. 일정의 절반을 비워둔 여유로운 상품입니다.</p><ul><li>더 테라스 클럽 3박</li><li>공항·전 일정 전용 차량</li><li>탈라소 프로그램 1회</li><li>일몰 프라이빗 다이닝</li></ul><div class="package-bottom"><span><i></i> 10–12월 출발 가능</span><button data-product="푸른 쉼표 · 3박 4일">상품 상담하기 →</button></div></div>
-          </article>
-          <article class="package-card reveal" data-package-category="culture">
-            <div class="package-image package-slow"><span>로컬</span><small>4박 5일</small></div>
-            <div class="package-body"><div class="package-title"><div><small>문화와 미식</small><h3>느린 류큐</h3></div><p><b>1,790,000</b>원부터 / 1인</p></div><p>나하의 골목부터 얀바루 숲까지, 류큐의 역사와 사람을 깊이 만나는 로컬 중심 여정입니다.</p><ul><li>부티크 호텔 2곳 4박</li><li>로컬 가이드 동행 2일</li><li>도자기 공방·아와모리 시음</li><li>마키시 시장 미식 투어</li></ul><div class="package-bottom"><span><i></i> 11–3월 출발 가능</span><button data-product="느린 류큐 · 4박 5일">상품 상담하기 →</button></div></div>
-          </article>
-          <article class="package-card reveal" data-package-category="family">
-            <div class="package-image package-family"><span>가족</span><small>5박 6일</small></div>
-            <div class="package-body"><div class="package-title"><div><small>가족 여행</small><h3>함께하는 섬</h3></div><p><b>2,180,000</b>원부터 / 1인</p></div><p>아이와 어른 모두의 속도를 고려한 리조트 중심 여행. 이동은 줄이고 함께하는 경험을 채웠습니다.</p><ul><li>바다 전망 가족 객실 5박</li><li>전용 차량·카시트 포함</li><li>츄라우미 수족관 빠른 입장</li><li>가족 사진 촬영 1시간</li></ul><div class="package-bottom"><span><i></i> 연중 출발 가능</span><button data-product="함께하는 섬 · 5박 6일">상품 상담하기 →</button></div></div>
-          </article>
-        </div>
-        <div class="package-note reveal"><span>아직 고민되나요?</span><p>상품을 고르기 어렵다면 여행 전문가가 취향과 예산에 맞춰 처음부터 새로 설계해 드립니다.</p><button data-open-planner>맞춤 여행 상담하기 <i>↗</i></button></div>
-      </section>
-
-      <section class="promotion section" aria-labelledby="promotionTitle">
-        <div class="promotion-card reveal">
-          <div class="promotion-visual" role="img" aria-label="오키나와 해안의 따뜻한 일몰 풍경">
-            <span>시즌 한정 혜택</span>
-            <p>2026.09.15 — 10.31</p>
-          </div>
-          <div class="promotion-copy">
-            <p class="kicker">겨울 오키나와 얼리버드</p>
-            <h3 id="promotionTitle">조금 먼저 준비하면<br />여행이 더 깊어집니다.</h3>
-            <p class="promotion-description">11월부터 2월 사이 출발하는 오키나와 여행을 미리 예약하고, WANDER가 준비한 세 가지 혜택을 만나보세요.</p>
-            <ul>
-              <li><b>01</b><span>1인 최대 20만원 여행 지원</span></li>
-              <li><b>02</b><span>공항–숙소 전용 이동 1회</span></li>
-              <li><b>03</b><span>일몰 다이닝 또는 로컬 투어 제공</span></li>
-            </ul>
-            <div class="promotion-bottom">
-              <small>출발 기간 · 2026.11.01 — 2027.02.28</small>
-              <button data-open-planner>프로모션 상담하기 <i>↗</i></button>
+        <p>건축과 자연, 서비스의 결이 오키나와의 풍경과 자연스럽게 이어지는 세 곳을 골랐습니다. 체크인부터 아침의 빛까지 여행의 장면이 됩니다.</p>
+      </div>
+      <article class="featured-stay reveal">
+        <div class="featured-image" role="img" aria-label="바다를 바라보는 오키나와 리조트 수영장"><span>01</span></div>
+        <div class="featured-copy"><small>ONNA · OKINAWA</small>
+          <h3>The Terrace Club<br />at Busena</h3>
+          <p>동중국해를 향해 열린 수평선과 웰니스 프로그램. 아무것도 하지 않는 시간을 가장 우아하게 보내는 어른의 리조트입니다.</p>
+          <dl>
+            <div>
+              <dt>ROOM</dt>
+              <dd>Ocean View</dd>
             </div>
+            <div>
+              <dt>MOOD</dt>
+              <dd>Quiet Luxury</dd>
+            </div>
+            <div>
+              <dt>STAY</dt>
+              <dd>2–3 Nights</dd>
+            </div>
+          </dl><button class="line-button" data-open-planner>이 숙소로 여행 만들기 <i>→</i></button>
+        </div>
+      </article>
+      <div class="stay-pair">
+        <article class="mini-stay reveal">
+          <div class="mini-image halekulani"></div><span>02 · ONNA</span>
+          <h3>Halekulani Okinawa</h3>
+          <p>하얀 건축과 에메랄드빛 바다가 만나는 클래식 리조트.</p>
+        </article>
+        <article class="mini-stay down reveal">
+          <div class="mini-image hyakuna"></div><span>03 · NANJO</span>
+          <h3>Hyakuna Garan</h3>
+          <p>바위와 숲 사이에 숨은 류큐 건축, 고요한 남쪽의 하루.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="taste-section section" id="taste">
+      <div class="taste-heading reveal">
+        <p class="kicker">LOCAL TABLE · 食卓</p>
+        <h3>섬의 맛을 따라<br />하루를 걷다</h3>
+        <p>바다에서 시장으로, 시장에서 작은 식탁으로. 오키나와의 기후와 역사가 한 접시에 담깁니다.</p>
+      </div>
+      <div class="taste-board">
+        <article class="taste-lead reveal">
+          <div class="taste-lead-image"></div>
+          <div><span>01 / MAKISHI</span>
+            <h3>마키시 공설시장</h3>
+            <p>오늘 잡힌 생선과 열대 과일, 상인들의 목소리가 뒤섞이는 나하의 부엌.</p>
+          </div>
+        </article>
+        <article class="round-bite reveal">
+          <div class="bite-image awamori"></div>
+          <div><span>02</span>
+            <h3>아와모리 바</h3>
+            <p>오래 숙성된 한 잔과 섬의 밤.</p>
+          </div>
+        </article>
+        <article class="round-bite reveal">
+          <div class="bite-image soba"></div>
+          <div><span>03</span>
+            <h3>오키나와 소바</h3>
+            <p>가쓰오 향이 깊은 느린 점심.</p>
+          </div>
+        </article>
+        <article class="round-bite reveal">
+          <div class="bite-image sweets"></div>
+          <div><span>04</span>
+            <h3>류큐 디저트</h3>
+            <p>흑당과 소금이 만든 단정한 단맛.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="plan section" id="plan">
+      <div class="plan-head reveal">
+        <p class="kicker">YOUR ISLAND ROUTE</p>
+        <h3>당신의 속도로 완성하는<br />4일의 섬 여행</h3>
+      </div>
+      <div class="route-layout reveal">
+        <div class="route-tabs" role="tablist" aria-label="오키나와 일정 선택">
+          <button class="active" role="tab" aria-selected="true" data-route="0"><span>DAY 01</span><b>나하의
+              첫인상</b></button>
+          <button role="tab" aria-selected="false" data-route="1"><span>DAY 02</span><b>서쪽 해안의 빛</b></button>
+          <button role="tab" aria-selected="false" data-route="2"><span>DAY 03</span><b>숲과 류큐의 시간</b></button>
+          <button role="tab" aria-selected="false" data-route="3"><span>DAY 04</span><b>남쪽의 고요</b></button>
+        </div>
+        <div class="route-visual" id="routeVisual"><span id="routeNumber">01</span>
+          <div><small id="routeArea">NAHA · 17:40</small>
+            <h3 id="routeTitle">시장과 골목 사이,<br />여행의 첫 저녁</h3>
+            <p id="routeDesc">마키시 시장에서 제철 식재료를 맛보고, 츠보야 도자기 거리와 작은 아와모리 바를 걷습니다.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="closing">
-        <div class="closing-photo"></div><div class="closing-wash"></div>
-        <div class="closing-copy reveal"><p>WANDER OKINAWA · PRIVATE JOURNEY</p><h3>섬은 기다리고<br />있습니다.</h3><button data-open-planner>나만의 오키나와 시작하기 <span>↗</span></button></div>
-      </section>
-    </main>
+    <section class="packages section" id="packages">
+      <div class="packages-head reveal">
+        <div>
+          <p class="kicker">엄선 여행 상품</p>
+          <h3>취향에 맞게 고르는<br />오키나와 여행 상품</h3>
+        </div>
+        <p>항공을 제외한 현지 숙박, 전용 이동, 엄선한 경험과 컨시어지 서비스가 포함된 프라이빗 여정입니다.</p>
+      </div>
+      <div class="package-filter reveal" role="group" aria-label="여행 상품 필터">
+        <button class="active" data-package-filter="all">전체</button><button
+          data-package-filter="rest">휴식</button><button data-package-filter="culture">로컬 문화</button><button
+          data-package-filter="family">가족</button>
+      </div>
+      <div class="package-grid">
+        <article class="package-card reveal" data-package-category="rest">
+          <div class="package-image package-blue"><span>인기</span><small>3박 4일</small></div>
+          <div class="package-body">
+            <div class="package-title">
+              <div><small>프라이빗 휴식</small>
+                <h3>푸른 쉼표</h3>
+              </div>
+              <p><b>1,490,000</b>원부터 / 1인</p>
+            </div>
+            <p>부세나의 바다와 웰니스에 집중하는 어른의 휴식. 일정의 절반을 비워둔 여유로운 상품입니다.</p>
+            <ul>
+              <li>더 테라스 클럽 3박</li>
+              <li>공항·전 일정 전용 차량</li>
+              <li>탈라소 프로그램 1회</li>
+              <li>일몰 프라이빗 다이닝</li>
+            </ul>
+            <div class="package-bottom"><span><i></i> 10–12월 출발 가능</span><button data-product="푸른 쉼표 · 3박 4일">상품 상담하기
+                →</button></div>
+          </div>
+        </article>
+        <article class="package-card reveal" data-package-category="culture">
+          <div class="package-image package-slow"><span>로컬</span><small>4박 5일</small></div>
+          <div class="package-body">
+            <div class="package-title">
+              <div><small>문화와 미식</small>
+                <h3>느린 류큐</h3>
+              </div>
+              <p><b>1,790,000</b>원부터 / 1인</p>
+            </div>
+            <p>나하의 골목부터 얀바루 숲까지, 류큐의 역사와 사람을 깊이 만나는 로컬 중심 여정입니다.</p>
+            <ul>
+              <li>부티크 호텔 2곳 4박</li>
+              <li>로컬 가이드 동행 2일</li>
+              <li>도자기 공방·아와모리 시음</li>
+              <li>마키시 시장 미식 투어</li>
+            </ul>
+            <div class="package-bottom"><span><i></i> 11–3월 출발 가능</span><button data-product="느린 류큐 · 4박 5일">상품 상담하기
+                →</button></div>
+          </div>
+        </article>
+        <article class="package-card reveal" data-package-category="family">
+          <div class="package-image package-family"><span>가족</span><small>5박 6일</small></div>
+          <div class="package-body">
+            <div class="package-title">
+              <div><small>가족 여행</small>
+                <h3>함께하는 섬</h3>
+              </div>
+              <p><b>2,180,000</b>원부터 / 1인</p>
+            </div>
+            <p>아이와 어른 모두의 속도를 고려한 리조트 중심 여행. 이동은 줄이고 함께하는 경험을 채웠습니다.</p>
+            <ul>
+              <li>바다 전망 가족 객실 5박</li>
+              <li>전용 차량·카시트 포함</li>
+              <li>츄라우미 수족관 빠른 입장</li>
+              <li>가족 사진 촬영 1시간</li>
+            </ul>
+            <div class="package-bottom"><span><i></i> 연중 출발 가능</span><button data-product="함께하는 섬 · 5박 6일">상품 상담하기
+                →</button></div>
+          </div>
+        </article>
+      </div>
+      <div class="package-note reveal"><span>아직 고민되나요?</span>
+        <p>상품을 고르기 어렵다면 여행 전문가가 취향과 예산에 맞춰 처음부터 새로 설계해 드립니다.</p><button data-open-planner>맞춤 여행 상담하기 <i>↗</i></button>
+      </div>
+    </section>
 
-    <footer><a class="wordmark" href="#home">WANDER<span>°</span></a><div><a href="#story">JOURNAL</a><a href="#stay">STAY</a><a href="#taste">TASTE</a><a href="#plan">PLAN</a></div><p>SEOUL · OKINAWA<br />© 2026 WANDER JOURNEYS</p></footer>
+    <section class="promotion section" aria-labelledby="promotionTitle">
+      <div class="promotion-card reveal">
+        <div class="promotion-visual" role="img" aria-label="오키나와 해안의 따뜻한 일몰 풍경">
+          <span>시즌 한정 혜택</span>
+          <p>2026.09.15 — 10.31</p>
+        </div>
+        <div class="promotion-copy">
+          <p class="kicker">겨울 오키나와 얼리버드</p>
+          <h3 id="promotionTitle">조금 먼저 준비하면<br />여행이 더 깊어집니다.</h3>
+          <p class="promotion-description">11월부터 2월 사이 출발하는 오키나와 여행을 미리 예약하고, WANDER가 준비한 세 가지 혜택을 만나보세요.</p>
+          <ul>
+            <li><b>01</b><span>1인 최대 20만원 여행 지원</span></li>
+            <li><b>02</b><span>공항–숙소 전용 이동 1회</span></li>
+            <li><b>03</b><span>일몰 다이닝 또는 로컬 투어 제공</span></li>
+          </ul>
+          <div class="promotion-bottom">
+            <small>출발 기간 · 2026.11.01 — 2027.02.28</small>
+            <button data-open-planner>프로모션 상담하기 <i>↗</i></button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <dialog id="plannerModal"><button class="modal-close" aria-label="닫기">×</button><p class="kicker">60-SECOND ISLAND PLAN</p><h3>어떤 오키나와를<br />만나고 싶나요?</h3><div class="planner-options"><button data-choice="바다와 휴식">바다와 휴식 <span>→</span></button><button data-choice="호텔과 미식">호텔과 미식 <span>→</span></button><button data-choice="로컬 문화">로컬 문화 <span>→</span></button></div><div class="planner-result"><p id="plannerResult"></p><label for="plannerEmail">추천 일정 받을 이메일</label><div><input id="plannerEmail" type="email" placeholder="you@example.com" /><button id="plannerSubmit">일정 받기</button></div><small id="plannerMessage" aria-live="polite"></small></div></dialog>
-    <script type="module" src="./script.js"></script>
-  </body>
+    <section class="closing">
+      <div class="closing-photo"></div>
+      <div class="closing-wash"></div>
+      <div class="closing-copy reveal">
+        <p>WANDER OKINAWA · PRIVATE JOURNEY</p>
+        <h3>섬은 기다리고<br />있습니다.</h3><button data-open-planner>나만의 오키나와 시작하기 <span>↗</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="wordmark" href="#home">WANDER<span>°</span></a>
+    <div><a href="#story">JOURNAL</a><a href="#stay">STAY</a><a href="#taste">TASTE</a><a href="#plan">PLAN</a></div>
+    <p>SEOUL · OKINAWA<br />© 2026 WANDER JOURNEYS</p>
+  </footer>
+
+  <dialog id="plannerModal"><button class="modal-close" aria-label="닫기">×</button>
+    <p class="kicker">60-SECOND ISLAND PLAN</p>
+    <h3>어떤 오키나와를<br />만나고 싶나요?</h3>
+    <div class="planner-options"><button data-choice="바다와 휴식">바다와 휴식 <span>→</span></button><button
+        data-choice="호텔과 미식">호텔과 미식 <span>→</span></button><button data-choice="로컬 문화">로컬 문화 <span>→</span></button>
+    </div>
+    <div class="planner-result">
+      <p id="plannerResult"></p><label for="plannerEmail">추천 일정 받을 이메일</label>
+      <div><input id="plannerEmail" type="email" placeholder="you@example.com" /><button id="plannerSubmit">일정
+          받기</button></div><small id="plannerMessage" aria-live="polite"></small>
+    </div>
+  </dialog>
+  <script type="module" src="./script.js"></script>
+</body>
+
 </html>
